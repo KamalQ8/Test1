@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "type": "processing",
+  "info": {
+    "name": "Custom Motion Stats + Spectral",
+    "description": "Stats (mean,var,std,min,max,rms,zcr) + spectral (band energy, dominant freq, centroid).",
+    "operatesOn": ["other"]
+  },
+  "implementationVersion": 1,
+  "docker": { "port": 4446 },
+  "cppType": "custom_motion_stats_spectral",
+  "parameters": [
+    {
+      "group": "Spectral band (Hz)",
+      "items": [
+        { "name": "Low cutoff (Hz)",  "value": 0.5, "type": "float", "param": "band-low-hz" },
+        { "name": "High cutoff (Hz)", "value": 5.0, "type": "float", "param": "band-high-hz" }
+      ]
+    },
+    {
+      "group": "Axis handling",
+      "items": [
+        { "name": "Axis mode", "value": "magnitude", "type": "select", "values": ["magnitude","per_axis"], "param": "axis-mode" }
+      ]
+    }
+  ]
+}

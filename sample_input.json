@@ -1,0 +1,27 @@
+{
+  "features": [
+    0.0,
+    0.1,
+    -0.2,
+    0.3,
+    -0.1,
+    0.05,
+    -0.05,
+    0.0
+  ],
+  "axes": [
+    "accX"
+  ],
+  "sampling_freq": 100.0,
+  "draw_graphs": true,
+  "project_id": 123,
+  "implementation_version": 1,
+  "params": {
+    "band_low_hz": 10.0,
+    "band_high_hz": 40.0
+  },
+  "calculate_performance": false,
+  "named_axes": {
+    "accX": "accX"
+  }
+}
